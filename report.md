@@ -139,6 +139,12 @@ These observations led to two key decisions:
 
 Overall, the model captures meaningful semantic patterns, but unfair clauses remain harder to detect consistently, especially in ambiguous cases.
 
+### User Manual — Clause Risk Detector
+
+Clause Risk Detector is a tool designed to analyze Terms of Service (ToS) clauses through two main functionalities: **Semantic Search** and **Clause Classification**. Semantic Search allows users to input a clause or concern and retrieve similar clauses from real companies, including their source, similarity score, and dataset label. The score indicates how close the result is to the query (**lower score = more similar**). Clause Classification allows users to input a clause and receive a prediction (potentially unfair or not) along with a probability indicating how likely the clause is to be unfair (**higher percentage = higher risk**). The tool is intended for exploratory analysis and does not replace legal review.
+
+In practice, users can first use Semantic Search to explore how similar clauses appear across different companies, and then use Clause Classification to assess the potential risk of a specific clause. The two components complement each other: search provides context and comparison, while classification provides a risk estimate. Results should be interpreted as guidance, especially in borderline cases where the model may show uncertainty.
+
 ### Future Work
 
 - Improve classification (handle imbalance, test stronger models)  

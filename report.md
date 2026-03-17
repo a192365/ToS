@@ -2,11 +2,12 @@
 
 ## Objectives 
 
-Develop a system to analyze Terms of Service clauses using:
-- semantic search  
-- classification  
+Develop a system to analyze Terms of Service clauses by combining:
 
-This report presents the main steps (EDA, modeling, evaluation) and key decisions.
+- **semantic search** to enable users to find clauses with similar meaning across different companies’ Terms of Service  
+- **classification** to estimate the likelihood that a clause is potentially unfair  
+
+The goal is to support exploratory analysis, clause comparison, and identification of potential risk patterns.
 
 ## Dataset Overview
 
